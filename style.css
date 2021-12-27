@@ -6,6 +6,9 @@ body{
 .container{
 margin: auto;
 }
+.project{
+    background-color: white;
+}
 .picture{
 
 }
