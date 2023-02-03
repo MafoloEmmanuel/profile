@@ -46,3 +46,23 @@ a{
 a:hover{
 background-color: grey;
 }
+.projects{
+    display: flex;
+}
+
+.pro1
+.pro2
+.pro3
+.pro4
+.pro5{
+    width: 20%;
+    flex-direction: row;
+}
+.aboutme{
+    padding: 25px;
+    display: block;
+    margin: 0 auto;
+}
+.button{
+    background-color: #9e0059;
+}
