@@ -1,47 +1,46 @@
 
-/* UNIVERSAL */
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  font-size: 100%;
-}
 
 /* ROOT FONT STYLES */
-
 * {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
-}
-
-/* TYPOGRAPHY */
-
-h1,h3{
-  text-align: center;
-}
-
-.container {
-  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #9e0059;
   
 }
+button{
+  background-color: black;
+  border: 1px solid black;
+}
+a{
+  text-decoration: none;
+  color: black;
+padding: 15px;
+font-weight: bolder;
 
+ }
+ a:hover{
+  background-color: gray;
+ }
+.navi{
+text-align: center;
+
+}
 .row {
   position: relative;
-  width: 100%;
   
+  padding: 10px;
 }
-
 .row [class^="col"] {
   float: left;
   margin: 0.5rem 2%;
   min-height: 0.125rem;
 }
-
+p {
+  padding: 10px;
+}
 .col-1,
 .col-2,
 .col-3,
@@ -54,57 +53,45 @@ h1,h3{
 .col-10,
 .col-11,
 .col-12 {
-  width: 96%;
+  width: 100%;
+  padding: 5px;
 }
-
 .col-1-sm {
   width: 4.33%;
 }
-
 .col-2-sm {
   width: 12.66%;
 }
-
 .col-3-sm {
   width: 21%;
 }
-
 .col-4-sm {
   width: 29.33%;
 }
-
 .col-5-sm {
   width: 37.66%;
 }
-
 .col-6-sm {
   width: 46%;
 }
-
 .col-7-sm {
   width: 54.33%;
 }
-
 .col-8-sm {
   width: 62.66%;
 }
-
 .col-9-sm {
   width: 71%;
 }
-
 .col-10-sm {
   width: 79.33%;
 }
-
 .col-11-sm {
   width: 87.66%;
 }
-
 .col-12-sm {
   width: 96%;
 }
-
 .row::after {
 	content: "";
 	display: table;
@@ -114,16 +101,18 @@ h1,h3{
 .hidden-sm {
   display: none;
 }
+.col-3 {
+  align-items: flex-start;
+}
 
-@media (max-width:800px){  /* 540px */
+@media screen and (min-width: 800px) {  /* 540px */
   .container {
+    display: block;
     width: 100%;
-    display: inline-block;
   }
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
- 
+@media  screen and (min-width: 800px) {  /* 720px */
   .col-1 {
     width: 4.33%;
   }
@@ -169,17 +158,12 @@ h1,h3{
   }
 
   .col-12 {
-    width: 96%;
+    
+    display: block;
   }
-
   .hidden-sm {
     display: block;
   }
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
-  .container {
-    width: 75%;
-    max-width: 60rem;
-  }
-}
+
