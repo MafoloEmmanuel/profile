@@ -110,6 +110,20 @@ p {
     display: block;
     width: 100%;
   }
+  .navi{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+nav{
+    padding: 5px;
+}
+a{
+    padding: 5px;
+}
+img{
+  width: 50%;
+}
 }
 
 @media  screen and (min-width: 800px) {  /* 720px */
